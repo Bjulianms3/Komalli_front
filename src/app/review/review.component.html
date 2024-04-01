@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="text-bg-success position-absolute top-0 end-0 btn btn-link btn-sm px-3 py-0 rounded-0
+text-decoration-none">
+<p>Universidad Veracruzana</p>
+</div>
+
+<div class="container2">
+    <button class="icon">
+    <i class="fa-solid fa-house"></i>
+    </button>
+</div>
+
+<div class="contenedor">
+    <h1 class="display-6 text-center">Komalli</h1> 
+</div>
+
+<div class="container">
+    <h2 class="re">Reseña</h2>
+    <img src="/assets/reseña-2.png" class="review">
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Publicar de Reseña
+    </div>
+    <div class="card-body">
+<form class="form">
+    <div class="mb-3">
+      <label for="" class="form-label">Escribe una reseña:</label>
+      <input type="text" class="form-control" maxlength="200" aria-describedby="">
+      <div id="" class="form-text" ng="!form.">Los caracteres permitidos son 200</div>
+    </div>
+    <button type="button" class="btn btn-success" (click)="abrirModal()">Registrar reseña</button>
+</form>
+    </div>
+</div>
+
+<div class="barra">
+    <div class="bg-success p-2 text-white">Comedor Komalli &copy; 2024</div>
+</div>
+
+<div class="modal" tabindex="-1" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Confirmacion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="cerrarModal()" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Presiona el boton para confirmar</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" (click)="cofirmacionModal()" data-bs-dismiss="modal">confirmar</button>
+          <button type="button" class="btn btn-danger" (click)="cerrarModal()" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="modal2">
+    <div class="exito">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="color">
+        <div class="modal-header">
+        <button type="button" class="btn-close" (click)="cerrar()" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    <div class="modal-body">
+        <p>Se ha guardado la reseña exitosamente</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
