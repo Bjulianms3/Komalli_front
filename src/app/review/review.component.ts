@@ -8,15 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './review.component.css'
 })
 export class ReviewComponent {
-
- /* validaCaracteres(){
-    const caracteres = document.getElementById('reseña');
-    if(caracteres.ariaValueMax?.length > 50){
-      alert("El limite de carcateres es de 50");
-    }
-  } */
-
-  abrirModal(){
+  registrar(){
     const modaldiv = document.getElementById('modal');
     if(modaldiv != null){
       modaldiv.style.display = 'block';

@@ -18,11 +18,10 @@
     height: 10px;
 }
 
-.review{
-    height: 135px;
-    width: 140px;
-    margin-left: 1100px;
-}
+/*.img-fluid{
+    height: 50%;
+    width: 60%;
+} */
 
 .container2{
     padding-top: 45px;
@@ -45,7 +44,7 @@
 }
 
 .form-control{
-    width: 1000px;
+    width: 60%;
     height: 75px;
 }
 
